@@ -5,18 +5,18 @@ import lemonDessert from "../../assets/images/lemon dessert.jpg";
 
 const Specials = () => {
   return (
-    <section>
-      <div>
-        <h2>Specials</h2>
-        <button>Online Menu</button>
+    <section className="specials">
+      <div className="specials__header">
+        <h2 className="specials__heading">Specials</h2>
+        <button className="specials__btn">Online Menu</button>
       </div>
-      <div>
+      <div className="specials__row">
         <DishCard
           img={greekSalad}
           alt="greek salad"
           title="Greek Salad"
           price="$12.99"
-          desc="A traditional Greek salad consists of sliced cucumbers, tomatoes, green bell pepper, red onion, olives, and feta cheese. This classic combination is delicious, so we stick to it, just adding a handful of mint leaves for a fresh finishing touch. Our olives of choice are Kalamata olives."
+          desc="A traditional Greek salad consisting of sliced cucumbers, tomatoes, green bell pepper, red onion, olives, and feta cheese."
         />
         <DishCard
           img={bruchetta}
@@ -28,9 +28,9 @@ const Specials = () => {
         <DishCard
           img={lemonDessert}
           alt="lemon dessert"
-          title="Our Special Lemon Dessert"
+          title="Lemon Dessert"
           price="$5.00"
-          desc="Lemon Lush is a layered dessert with a pecan crust topped with a lemon cheesecake layer, lemon pudding, and finally, whipped topping and more pecans. Try our special Lemon Cream Cheese Dump Cake for another favorite lemon dessert!"
+          desc="Lemon Lush is a layered dessert with a pecan crust topped with a lemon cheesecake layer and lemon pudding."
         />
       </div>
     </section>

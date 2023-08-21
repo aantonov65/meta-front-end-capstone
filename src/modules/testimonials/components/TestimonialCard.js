@@ -1,10 +1,13 @@
-const TestimonialCard = ({ rating, name, review }) => {
+const TestimonialCard = ({ rating, img, name, review }) => {
   return (
-    <>
-      <div>Rating {rating}</div>
-      <div>{name}</div>
-      <div>{review}</div>
-    </>
+    <div className="card">
+      <img src={img} className="card__img" alt="customer portrait" />
+      <div className="card__details">
+        <span className="card__name">{name}</span>
+        <span className="card__review">"{review}"</span>
+        <span className="card__rating">Rating {rating}</span>
+      </div>
+    </div>
   );
 };
 
